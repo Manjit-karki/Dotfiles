@@ -1,0 +1,33 @@
+{
+    "layer": "top",
+    "height": 30,
+    "spacing": 5,
+    // Choose the order of the modules
+    "modules-left": [
+        "hyprland/workspaces"
+    ],
+    "modules-right": [
+        "pulseaudio",
+				"clock"
+    ],
+    "hyprland/workspaces": {
+        "disable-scroll": true,
+        "all-outputs": true,
+        "on-click": "activate"
+    },
+    "clock": {
+        "tooltip-format": "{:%A, %B %d, %Y}",
+        "format": "{:%H:%M}"
+    },
+    "pulseaudio": {
+        // "scroll-step": 1, // %, can be a float
+        "format": "{icon}",
+        "format-muted": "󰖁",
+				"format-icons": {
+					"default": ["", "", "󰕾"]
+				},
+				"tooltip-format": "{volume}% volume"
+		}
+}
+
+// vim: ft=jsonc
