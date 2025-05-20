@@ -8,13 +8,8 @@
     ],
     "modules-right": [
         "pulseaudio",
-        "network",
-        "battery",
-				"clock",
-		],
-		"hyprland/window": {
-			"separate-outputs": true
-		},
+				"clock"
+    ],
     "hyprland/workspaces": {
         "disable-scroll": true,
         "all-outputs": true,
@@ -24,22 +19,6 @@
         "tooltip-format": "{:%A, %B %d, %Y}",
         "format": "{:%H:%M}"
     },
-    "battery": {
-        "states": {
-            "warning": 20
-        },
-        "format": "{icon}",
-        "format-icons": [ "󰂎", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹" ],
-        "format-charging": "󰂄",
-        "format-warning": "󰂃",
-				"tooltip-format": "{capacity}% capacity"
-    },
-    "network": {
-        "format-wifi": "󰤨",
-        "format-disconnected": "󰤭",
-				"tooltip-format": "Connected to {essid}",
-				"on-click": "hyprctl dispatch exec '[float]' '$TERMINAL -e nmtui'"
-    },
     "pulseaudio": {
         // "scroll-step": 1, // %, can be a float
         "format": "{icon}",
@@ -48,7 +27,7 @@
 					"default": ["", "", "󰕾"]
 				},
 				"tooltip-format": "{volume}% volume"
-		},
+		}
 }
 
 // vim: ft=jsonc
