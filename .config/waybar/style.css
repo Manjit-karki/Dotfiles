@@ -37,10 +37,15 @@
 
 window#waybar {
     background-color: transparent;
+    color: @text;
+    transition-property: background-color;
+    transition-duration: .5s;
 }
+
 
 button {
     /* Use box-shadow instead of border so the text isn't offset */
+    box-shadow: inset 0 -3px transparent;
     /* Avoid rounded borders under each button name */
     border: none;
     border-radius: 0;
@@ -49,10 +54,10 @@ button {
 /* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
 
 #workspaces button:hover {
-    color: @red;
+    color: @blue;
     box-shadow: inherit;
     text-shadow: inherit;
-    background: @base;
+    background: @crust;
     border: @crust;
 }
 
@@ -64,7 +69,7 @@ button {
 }
 
 #workspaces button.selected {
-    color: @peach;
+    color: @blue;
 }
 
 #workspaces button.active {
@@ -107,7 +112,6 @@ button {
 #clock {
   color: @text;
 }
-
 #pulseaudio {
   color: @mauve;
 }
@@ -115,4 +119,26 @@ button {
 #pulseaudio.muted {
   color: @surface2;
 }
+
+#network {
+  color: @blue;
+}
+
+#network.disconnected {
+  color: @surface2;
+}
+
+#battery {
+    color: @green;
+}
+
+#battery.warning:not(.charging) {
+    color: @red;
+}
+
+#custom-power {
+  color: @maroon;
+  margin-right: 5px;
+}
+
 /* vim: ft=sass */
