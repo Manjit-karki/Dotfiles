@@ -21,12 +21,12 @@
     },
     "pulseaudio": {
         // "scroll-step": 1, // %, can be a float
-        "format": "{icon}",
+        "format": "{icon} {volume}%",
         "format-muted": "󰖁",
 				"format-icons": {
 					"default": ["", "", "󰕾"]
 				},
-				"tooltip-format": "{volume}% volume"
+				"tooltip-format": " pipewire audio"
 		}
 }
 
