@@ -9,8 +9,10 @@ alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 alias ll='ls -a'
 alias n="nvim"
+alias vim="nvim"
 alias g="git"
-alias gitkey="eval"$(ssh-agent -s)" ssh-add ~/.ssh/key"
+alias hibernate='sudo systemctl hibernate'
+alias gitkey='eval "$(ssh-agent -s)"; ssh-add ~/.ssh/key'
 
 PS1='[\u@\h \W]\$ '
 . "$HOME/.cargo/env"
