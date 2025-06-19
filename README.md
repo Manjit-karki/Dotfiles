@@ -6,21 +6,19 @@ I hope you enjoy it.
 
 Also please note that the install script is aimed towards FRESH installs only and is still experimental so if you already have a pre existing rice set-up then back it up and please please please be careful while using the install script. Thank you! 
 
-<table align="center">
-  <tr>
-    <td><img src="assets/1.png" width="200"/></td>
-    <td><img src="assets/2.png" width="200"/></td>
-    <td><img src="assets/3.png" width="200"/></td>
-  </tr>
-  <tr>
-    <td><img src="assets/4.png" width="200"/></td>
-    <td><img src="assets/5.png" width="200"/></td>
-    <td><img src="assets/6.png" width="200"/></td>
-  </tr>
-  <tr>
-    <td colspan="3" align="center"><img src="assets/7.png" width="200"/></td>
-  </tr>
-</table>
+<p align="center">
+  <img src="assets/1.png" width="200" />
+  <img src="assets/2.png" width="200" />
+  <img src="assets/3.png" width="200" />
+</p>
+<p align="center">
+  <img src="assets/4.png" width="200" />
+  <img src="assets/5.png" width="200" />
+  <img src="assets/6.png" width="200" />
+</p>
+<p align="center">
+  <img src="assets/7.png" width="200" />
+</p>
 
 
 # Details
