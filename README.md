@@ -34,4 +34,4 @@ Also please note that the install script is aimed towards FRESH installs only an
 - Browser: firefox, chromium
 
 
-The ricing is still in process and I do plan to do everything from scratch later when i have time and am motivated to work everything from the ground up and connect them together to make a seamless environment to work on. If you do end up using this rice. Thank you so much for using it.
+The ricing is still in process and I am planning to remake everything from scratch later when I have the time and motivation.I will be building everything from the ground up and connecting them together to make a seamless environment to work in. It is fully functional as it is, but you might like changing stuff a bit. If you do end up using this rice. Thank you so much for using it.
