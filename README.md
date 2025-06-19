@@ -9,10 +9,12 @@ Also please note that the install script is aimed towards FRESH installs only an
 <p align="center">
   <img src="assets/1.png" width="350" />
   <img src="assets/2.png" width="350" />
-  <img src="assets/3.png" width="350" />
 </p>
 <p align="center">
+  <img src="assets/3.png" width="350" />
   <img src="assets/4.png" width="350" />
+</p>
+<p align="center">
   <img src="assets/5.png" width="350" />
   <img src="assets/6.png" width="350" />
 </p>
