@@ -1,0 +1,24 @@
+{
+    "label" : "lock",
+    "action" : "hyprlock"
+}
+{
+    "label" : "reboot",
+    "action" : "systemctl reboot || loginctl reboot"
+}
+
+{
+    "label" : "logout",
+    "action" : "pkill Hyprland || pkill sway || pkill niri || loginctl terminate-user $USER"
+}
+{
+    "label" : "shutdown",
+    "action" : "systemctl poweroff || loginctl poweroff"
+}
+{
+  "label" : "hibernate"
+  "action" : "bash -c 'hyprlock & sleep 0.5; systemctl hibernate'"
+}
+{
+  "label" : "suspend"
+}

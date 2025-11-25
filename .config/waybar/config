@@ -1,0 +1,69 @@
+{
+  "modules-left": [
+    "custom/os_button",
+    "hyprland/workspaces"
+  ],
+  "modules-right": [
+    "tray",
+    "network",
+    "pulseaudio",
+    "clock"
+  ],
+
+  "hyprland/workspaces": {
+    "disable-scroll": true,
+    "all-outputs": true,
+    "warp-on-scroll": false,
+    "format": "{icon}",
+    "format-icons": {
+      "active": "",
+      "focused": "",
+      "default": ""
+    },
+    "persistent-workspaces": {
+      "1": [],
+      "2": [],
+      "3": []
+    },
+    "sort-by-name": true
+  },
+
+  "custom/os_button": {
+    "format": "󰣇",
+    "on-click": "wlogout",
+    "tooltip": false
+  },
+
+  "clock": {
+    "format": "{:%R}",
+    "tooltip": false,
+    "format-alt": "{:%Y-%m-%d}"
+  },
+
+  "network": {
+    "format-wifi": " ",
+    "format-ethernet": " ",
+    "tooltip-format-wifi": "Connected to {essid}  ",
+    "tooltip-format-ethernet": "Ethernet",
+    "format-disconnected": "⚠"
+  },
+
+  "tray": {
+    "icon-size": 18,
+    "spacing": 8
+  },
+
+  "pulseaudio": {
+    "scroll-step": 5,
+    "tooltip": false,
+    "format": "{icon}  {volume}%",
+    "format-muted": "󰝟 ",
+    "format-icons": [
+      " ",
+      " ",
+      " "
+    ],
+    "on-click": "pavucontrol"
+  }
+}
+
