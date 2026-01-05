@@ -1,12 +1,12 @@
 #
 # ~/.bashrc
 #
-export MPD_HOST=~/.config/mpd/socket
+export MPD_HOST=/home/katsumi/.config/mpd/socket
 export PATH="$HOME/.local/share/nvim/mason/bin:$PATH"
 
 trap '' SIGTSTP
 
-export EDITOR='neovim'
+export EDITOR='nvim'
 
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
@@ -14,6 +14,7 @@ export EDITOR='neovim'
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 alias ll='ls -a'
+alias F='nautilus'
 alias n="nvim"
 alias vim="nvim"
 alias g="git"
@@ -30,6 +31,12 @@ alias rain='unimatrix -c white'
 alias bios='systemctl reboot --firmware-setup'
 alias audiofix='~/.config/scripts/audio_reset.sh'
 
+# Push and Pull Obsidian notes
+alias notepull='~/.config/scripts/pull.sh'
+alias notepush='~/.config/scripts/push.sh'
+
+
+
 PS1='[\u@\h \W]\$ '
 . "$HOME/.cargo/env"
 
@@ -40,3 +47,5 @@ eval "$(oh-my-posh init bash --config ~/.poshthemes/bubbles.omp.json)"
 # Created by `pipx` on 2025-06-13 14:09:02
 export PATH="$HOME/.local/bin:$PATH"
 
+export PATH=/opt/cuda/bin:$PATH
+export LD_LIBRARY_PATH=/opt/cuda/lib64:$LD_LIBRARY_PATH

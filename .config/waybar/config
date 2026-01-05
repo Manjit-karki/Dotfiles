@@ -43,9 +43,10 @@
   "network": {
     "format-wifi": " ",
     "format-ethernet": " ",
-    "tooltip-format-wifi": "Connected to {essid}  ",
+    "tooltip-format-wifi": "{essid}  ",
     "tooltip-format-ethernet": "Ethernet",
-    "format-disconnected": "⚠"
+    "format-disconnected": "⚠ ",
+    "on-click": "nm-connection-editor"
   },
 
   "tray": {
