@@ -2,6 +2,8 @@
 
 REPO=~/Obsidian/Notes
 
+gitkey
+
 git -C "$REPO" add .
 
 if git -C "$REPO" diff --cached --quiet; then

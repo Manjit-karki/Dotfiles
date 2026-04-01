@@ -30,6 +30,8 @@ alias gpu="nvtop"
 alias rain='unimatrix -c white'
 alias bios='systemctl reboot --firmware-setup'
 alias audiofix='~/.config/scripts/audio_reset.sh'
+alias wifi='nmcli device wifi connect "Katsumi"'
+alias dotupdate='~/.config/scripts/updatedots.sh'
 
 # Push and Pull Obsidian notes
 alias notepull='~/.config/scripts/pull.sh'
@@ -46,6 +48,3 @@ eval "$(oh-my-posh init bash --config ~/.poshthemes/bubbles.omp.json)"
 
 # Created by `pipx` on 2025-06-13 14:09:02
 export PATH="$HOME/.local/bin:$PATH"
-
-export PATH=/opt/cuda/bin:$PATH
-export LD_LIBRARY_PATH=/opt/cuda/lib64:$LD_LIBRARY_PATH

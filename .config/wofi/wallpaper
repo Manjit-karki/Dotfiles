@@ -2,7 +2,7 @@
 allow_images=true
 show=drun
 width=1200
-height=250
+height=320
 always_parse_args=true
 show_all=true
 term=kitty
