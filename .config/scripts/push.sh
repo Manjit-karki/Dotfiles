@@ -1,8 +1,6 @@
 #!/bin/bash
 
-REPO=~/Obsidian/Notes
-
-gitkey
+REPO=~/'My Notes'/Notes
 
 git -C "$REPO" add .
 

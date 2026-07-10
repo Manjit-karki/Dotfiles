@@ -1,3 +1,3 @@
 #!/bin/bash
 
-git -C ~/Obsidian/Notes pull
+git -C ~/'My Notes'/Notes pull
