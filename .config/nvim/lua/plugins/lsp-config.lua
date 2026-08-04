@@ -3,49 +3,66 @@ return {
     "williamboman/mason.nvim",
     config = function()
       require("mason").setup()
-    end
+    end,
   },
+
   {
     "williamboman/mason-lspconfig.nvim",
+    dependencies = {
+      "williamboman/mason.nvim",
+    },
     config = function()
       require("mason-lspconfig").setup({
-        ensure_installed = { "lua_ls", "ts_ls", "pyright", "clangd"},
+        ensure_installed = {
+          "lua_ls",
+          "ts_ls",
+          "pyright",
+          "clangd",
+        },
       })
-    end
+    end,
   },
+
   {
     "neovim/nvim-lspconfig",
+    dependencies = {
+      "hrsh7th/cmp-nvim-lsp",
+    },
     config = function()
-      -- Minimal on_attach with keymaps
+      local capabilities = require("cmp_nvim_lsp").default_capabilities()
+
       local on_attach = function(_, bufnr)
+        local opts = {
+          buffer = bufnr,
+          silent = true,
+          noremap = true,
+        }
 
-        local opts = { noremap = true, silent = true, buffer = bufnr }
-        vim.keymap.set('n', 'gd', vim.lsp.buf.definition, {})
-        vim.keymap.set('n', 'gr', vim.lsp.buf.references, {})
-        vim.keymap.set('n', 'K', vim.lsp.buf.hover, {} )
-        vim.keymap.set({'n', 'v'}, '<leader>ca', vim.lsp.buf.code_action, {})
+        vim.keymap.set("n", "gd", vim.lsp.buf.definition, opts)
+        vim.keymap.set("n", "gr", vim.lsp.buf.references, opts)
+        vim.keymap.set("n", "K", vim.lsp.buf.hover, opts)
+        vim.keymap.set("n", "<leader>rn", vim.lsp.buf.rename, opts)
+        vim.keymap.set({ "n", "v" }, "<leader>ca", vim.lsp.buf.code_action, opts)
+        vim.keymap.set("n", "<leader>d", vim.diagnostic.open_float, opts)
+        vim.keymap.set("n", "[d", vim.diagnostic.goto_prev, opts)
+        vim.keymap.set("n", "]d", vim.diagnostic.goto_next, opts)
       end
-
-      -- Minimal capabilities
-      local capabilities = require('cmp_nvim_lsp').default_capabilities()
 
       local servers = {
-        lua_ls = { cmd = { "lua-language-server" }, filetypes = { "lua" } },
-        pyright = { cmd = { "pyright-langserver", "--stdio" }, filetypes = { "python" } },
-        ts_ls = { cmd = { "typescript-language-server", "--stdio" }, filetypes = { "javascript", "javascriptreact", "typescript", "typescriptreact" } },
-        clangd = { cmd = { "clangd" }, filetypes = { "c", "cpp", "objc", "objcpp" } },
+        "lua_ls",
+        "ts_ls",
+        "pyright",
+        "clangd",
       }
 
-
-      for name, config in pairs(servers) do
-        vim.lsp.start({
-          name = name,
-          cmd = config.cmd,
-          filetypes = config.filetypes,
-          on_attach = on_attach,
+      for _, server in ipairs(servers) do
+        vim.lsp.config(server, {
           capabilities = capabilities,
+          on_attach = on_attach,
         })
+
+        vim.lsp.enable(server)
       end
-    end
-  }
+    end,
+  },
 }

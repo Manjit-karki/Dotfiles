@@ -32,6 +32,7 @@ alias bios='systemctl reboot --firmware-setup'
 alias audiofix='~/.config/scripts/audio_reset.sh'
 alias wifi='nmcli device wifi connect "Katsumi"'
 alias dotupdate='~/.config/scripts/updatedots.sh'
+alias anime="ani-cli"
 
 # Push and Pull Obsidian notes
 alias notepull='~/.config/scripts/pull.sh'
