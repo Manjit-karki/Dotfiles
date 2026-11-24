@@ -1,4 +1,5 @@
 hl.on("hyprland.start", function ()
+  hl.exec_cmd("~/.config/scripts/audio_reset.sh")
   hl.exec_cmd("waybar")
   hl.exec_cmd("swaync")
   hl.exec_cmd("awww-daemon")

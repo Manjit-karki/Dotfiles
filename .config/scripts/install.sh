@@ -9,7 +9,7 @@ fi
 
 # Package install section
 
-sudo pacman -S --needed git base-devel python lua jdk-openjdk vim firefox kitty curl 
+sudo pacman -S --needed git base-devel python lua jdk-openjdk vim firefox kitty curl neovim 
 
 #installing yay
 git clone https://aur.archlinux.org/yay.git
@@ -18,6 +18,4 @@ makepkg -si
 
 
 #AUR and Packages install section
-yay -S swww waybar swaync fastfetch neovim python-pywalfox wlogout cava spotify discord blueman /
-bluez pavucontrol unimatrix-git protonup-qt obsidian heroic-games-launcher-bin driodcam swappy / 
-steam rmpc python-pipx python-pywal python-spotdl
+yay -S swww waybar swaync fastfetch neovim python-pywalfox wlogout cava spotify discord blueman bluez pavucontrol unimatrix-git protonup-qt heroic-games-launcher-bin driodcam swappy steam rmpc python-pipx python-pywal python-spotdl zennotes wlogout

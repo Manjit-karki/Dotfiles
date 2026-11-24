@@ -1,0 +1,3 @@
+# Fastfetch
+
+fastfetch

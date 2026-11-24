@@ -27,6 +27,17 @@ fi
 
 echo ""
 echo "----------------------------------------------------"
+echo "CLEARING INFECTED FILES"
+echo "----------------------------------------------------"
+
+infected="$(du -sh /var/log/clamav/infected)"
+sudo rm -rf /var/log/clamav/infected/*
+echo "Clearing Infected files" 
+echo "Spaced saved: $infected"
+
+
+echo ""
+echo "----------------------------------------------------"
 echo "CLEARING HOME CACHE"
 echo "----------------------------------------------------"
 

@@ -19,11 +19,11 @@ hl.config({
 hl.device({
   name = "fantech-fantech-wg7v2",
     accel_profile = "flat",
-    sensitivity = -0.5,
+    sensitivity = 0,
 })
 
 hl.device({
   name = "fantech-fantech-wg7v2-2",
     accel_profile = "flat",
-    sensitivity = -0.5,
+    sensitivity = 0,
 })
