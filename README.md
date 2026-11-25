@@ -69,8 +69,8 @@ sudo pacman -S git
 ```bash
 git clone https://github.com/Manjit-karki/Dotfiles.git
 cd Dotfiles/Install
-chmod +x installdots.sh
-./installdots.sh
+chmod +x install.sh
+./install.sh
 ```
 > [!important]
 > **Do not move or delete the dotfiles repository after installation.**
