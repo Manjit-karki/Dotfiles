@@ -3,7 +3,8 @@ echo "UPDATING SYSTEM"
 echo "----------------------------------------------------"
 
 yay -Syu --noconfirm
-sudo pacman -Syu
+
+sudo pacman -Syu --noconfirm
 
 echo "----------------------------------------------------"
 echo "SYSTEM UPDATE COMPLETE"

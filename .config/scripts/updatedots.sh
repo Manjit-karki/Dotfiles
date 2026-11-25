@@ -6,11 +6,9 @@ CONFIG_DIR="$HOME/.config"
 DOT="$HOME/Dotfiles/.config"
 
 # Copy .bashrc
-cp "$HOME/.bashrc" "$HOME/Dotfiles/"
-cp -r "$HOME/.bash" "$HOME/Dotfiles/"
 
 # Copy config folders
-dirs=(hypr kitty nvim fastfetch waybar wlogout wal wallpaper wofi scripts mpd)
+dirs=(hypr kitty nvim fastfetch waybar wlogout wal wallpaper wofi fish scripts mpd)
 
 for d in "${dirs[@]}"; do
     [ -d "$CONFIG_DIR/$d" ] && cp -r "$CONFIG_DIR/$d" "$DOT/"

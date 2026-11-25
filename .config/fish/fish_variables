@@ -1,0 +1,4 @@
+# This file contains fish universal variable definitions.
+# VERSION: 3.0
+SETUVAR fish_greeting:
+SETUVAR fish_user_paths:/home/katsumi/\x2ecargo/bin\x1e/home/katsumi/\x2elocal/bin\x1e/home/katsumi/\x2elocal/share/nvim/mason/bin
