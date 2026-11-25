@@ -6,12 +6,16 @@ This contains my **Arch** Linux configuration for *Hyprland*.
 >[!WARNING]
 > All configs are meant to be used with `Pywal`
 
+
+
 ## Showcase:
+
 These are from my older configs but not much has changed so they're still relavant to the overall rice.
 <p align="center">
   <img src="showcase/1.png" width="400" />
   <img src="showcase/2.png" width="400" />
 </p>
+
 
 ## Keybinds
 
@@ -30,6 +34,7 @@ Basic keybinds
 | `Super + Shift + 1, 2..`| Move window to workspace  |
 | `Super + B`             | Blender (if installed)    |
 | `Super + N`             | ZenNotes (if installed)   |
+
 
 Move Focus between active windows 
 
@@ -50,8 +55,36 @@ Move window to
 | `ALT + SHIFT + k`       | Move window up            |
 | `ALT + SHIFT + j`       | Move window down          |
 
+
+
 >[!NOTE]
 > Use mouse to resize window. Drag corners to resize. 
+
+## Aliases 
+
+Applicaitons 
+
+| Alias      | Command                               | Description                   |
+|------------|---------------------------------------|-------------------------------|
+| `F`        | `nautilus`                            | Open file manager             |
+| `n`        | `nvim`                                | Open Neovim                   |
+| `vim`      | `nvim`                                | Use Neovim as Vim             |
+| `g`        | `git`                                 | Git shortcut                  |
+| `m`        | `rmpc`                                | Open terminal music player    |
+| `fetch`    | `fastfetch`                           | Display system information    |
+| `stat`     | `btop`                                | Open system resource monitor  |
+| `rain`     | `unimatrix -c white`                  | Run Unimatrix in white        |
+
+
+Scripts and system maintenance
+
+| Alias      | Command                               | Description                   |
+|------------|---------------------------------------|-------------------------------|
+| `bios`     | `systemctl reboot --firmware-setup`   | Reboot into BIOS/UEFI settings|
+| `sysclean` | `~/.config/scripts/sysmaintenance.sh` | Run system maintenance        |
+| `sysupdate`| `~/.config/scripts/update.sh`         | Update system                 |
+| `audiofix` | `~/.config/scripts/audio_reset.sh`    | Reset audio settings          |
+
 
 
 ## Installation:
@@ -75,6 +108,8 @@ cd Dotfiles/Install
 chmod +x install.sh
 ./install.sh
 ```
+
+
 > [!important]
 > **Do not move or delete the dotfiles repository after installation.**
 >
