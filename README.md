@@ -23,7 +23,6 @@ Basic keybinds
 | `Super + E`             | File manager              |
 | `Super + F`             | Toggle fullscreen         |
 | `Super + P`             | Toggle float              |
-|-------------------------|---------------------------|
 | `Super + Space`         | Application launcher      |
 | `SuperSHIFT + Space`    | Wallpaper selector        |
 | `Super + 1, 2, 3..`     | Change workspaces         |
