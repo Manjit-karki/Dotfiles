@@ -57,9 +57,9 @@ Move window to
 ## Installation:
 
 >[!WARNING]
->The installation scripts is autogenerate from claude and haven't been tested yet. 
+>The installation scripts are AI generated and haven't been tested yet. 
 > 
->Even tho I've checked it use it at your own risk. 
+>Even tho I've read through it, use it at your own risk. 
 >
 >Yes, I'm that lazy. yes, both.
 
