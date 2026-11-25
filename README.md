@@ -1,6 +1,7 @@
 # Manjit's Dotfiles
 
-This contains my **Arch** Linux configuration for *Hyprland*. *P.S:* Have been considering switching to Quickshell soon. 
+This contains my **Arch** Linux configuration for *Hyprland*. 
+
 
 >[!WARNING]
 > All configs are meant to be used with `Pywal`
@@ -56,9 +57,11 @@ Move window to
 ## Installation:
 
 >[!WARNING]
-> The installation scripts is autogenerate from claude and haven't been tested yet. 
-> Even tho I've checked it use it at your own risk. 
-> Yes, I'm that lazy. yes, both.
+>The installation scripts is autogenerate from claude and haven't been tested yet. 
+> 
+>Even tho I've checked it use it at your own risk. 
+>
+>Yes, I'm that lazy. yes, both.
 
 **First install git then use the next command and continue the installation until it's finished.**
 
